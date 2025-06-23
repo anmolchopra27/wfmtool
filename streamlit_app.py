@@ -100,7 +100,7 @@ if "results" not in st.session_state:
 if "error_measures" not in st.session_state:
     st.session_state.error_measures = None
 
-def generate_download_link(df, filename, content_type="text/csv"):
+def generate_download_link(df, filename, content_type="csv"):
     """Generate a download link for a DataFrame as CSV or Excel."""
     try:
         if content_type == "csv":
